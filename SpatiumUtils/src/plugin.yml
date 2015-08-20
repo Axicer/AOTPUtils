@@ -113,3 +113,6 @@ commands:
   stick:
     description: donne un baton... magique !
     usage: /stick
+  forcefield:
+    description: active/desactive le forcefield
+    usage: /forcefield
