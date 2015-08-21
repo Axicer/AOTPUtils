@@ -60,6 +60,7 @@ public class Documentation {
 						+ "     |-> spatium.addItem"
 						+ "/light --> spatium.light\n"
 						+ "/stick --> spatium.stick\n"
+						+ "/forcefield --> spatium.forcefield\n"
 						+ "\n"
 						+ "Il ne reste plus qu'a les installer ! =p");
 			}finally{

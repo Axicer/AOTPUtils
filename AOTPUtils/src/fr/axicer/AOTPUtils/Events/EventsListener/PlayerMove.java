@@ -37,34 +37,15 @@ public class PlayerMove implements Listener {
 										  );
 			}
 		}
-		if(ForceFielCommand.getForcefieldPlayers().contains(ev.getPlayer())){
-			Player player = ev.getPlayer();
-			int playerX = player.getLocation().getBlockX();
-			int playerY = player.getLocation().getBlockY();
-			int playerZ = player.getLocation().getBlockZ();
-			int Xmax = playerX+5;
-			int Xmin = playerX-5;
-			int Ymax = playerY+5;
-			int Ymin = playerY-5;
-			int Zmax = playerZ+5;
-			int Zmin = playerZ-5;
-			for(Entity entity : player.getWorld().getEntities()){
-				if(entity instanceof Player){
-					Player playerEntity = (Player) entity;
-					for(int x = Xmin ; x == Xmax ; x++){
-						for(int z = Zmin ; z == Zmax ; z++){
-							for(int y = Ymin ; y == Ymax ; y++){
-								Location actualLoc = new Location(player.getWorld(), x, y, z);
-								Location entityLoc = entity.getLocation();
-								if(actualLoc.getBlockX() == entityLoc.getBlockX() &&
-								   actualLoc.getBlockY() == entityLoc.getBlockY() &&
-								   actualLoc.getBlockZ() == entityLoc.getBlockZ()){
-									playerEntity.setVelocity(new Vector(0.1, 0.1, 0.1));
-									playerEntity.damage(1);
-								}
-							}
-						}
-					}
+		Player player = ev.getPlayer();
+		Location playerLoc = player.getLocation();
+		for(Entity entity : player.getWorld().getEntitiesByClass(Player.class)){
+			Player target = (Player) entity;
+			if(target != player){
+				Location targetLoc = target.getLocation();
+				if(playerLoc.distance(targetLoc) <= 8 && ForceFielCommand.getForcefieldPlayers().contains(target)){
+					player.damage(1);
+					player.setVelocity(player.getLocation().getDirection().multiply(-0.5));
 				}
 			}
 		}
