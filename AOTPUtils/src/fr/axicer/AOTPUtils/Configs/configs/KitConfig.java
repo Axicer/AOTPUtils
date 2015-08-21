@@ -8,13 +8,13 @@ import org.bukkit.Material;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.enchantments.Enchantment;
 
-import fr.axicer.AOTPUtils.SpatiumUtils;
+import fr.axicer.AOTPUtils.AOTPUtils;
 
 public class KitConfig {
 	public static File kitConfigFile;
 	public static YamlConfiguration kitConfig;
 	
-	public static void setupKitConfig(SpatiumUtils pl) throws IOException{
+	public static void setupKitConfig(AOTPUtils pl) throws IOException{
 		kitConfigFile = new File(pl.getDataFolder()+"/kit.yml");
 		if(!kitConfigFile.exists()){
 			kitConfigFile.createNewFile();

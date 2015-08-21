@@ -13,7 +13,7 @@ import fr.axicer.AOTPUtils.Utils.Documentation;
 import fr.axicer.AOTPUtils.Utils.KitLoader;
 import fr.axicer.AOTPUtils.Utils.Vault;
 
-public class SpatiumUtils extends JavaPlugin{
+public class AOTPUtils extends JavaPlugin{
 	public void onEnable(){
 		saveDefaultConfig();// needed for create plugins's config file.
 		

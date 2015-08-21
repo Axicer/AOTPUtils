@@ -7,16 +7,16 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-import fr.axicer.AOTPUtils.SpatiumUtils;
+import fr.axicer.AOTPUtils.AOTPUtils;
 import fr.axicer.AOTPUtils.Configs.ConfigManager;
 import fr.axicer.AOTPUtils.Utils.ChatUtils;
 import fr.axicer.AOTPUtils.Utils.Vault;
 
 public class SreloadCommand implements CommandExecutor {
 
-	SpatiumUtils pl;
+	AOTPUtils pl;
 	
-	public SreloadCommand(SpatiumUtils pl){
+	public SreloadCommand(AOTPUtils pl){
 		this.pl = pl;
 	}
 	

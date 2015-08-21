@@ -9,15 +9,15 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-import fr.axicer.AOTPUtils.SpatiumUtils;
+import fr.axicer.AOTPUtils.AOTPUtils;
 import fr.axicer.AOTPUtils.Configs.ConfigManager;
 import fr.axicer.AOTPUtils.Utils.ChatUtils;
 
 public class PlayerJoin implements Listener {
 	
-	SpatiumUtils pl;
+	AOTPUtils pl;
 	
-	public PlayerJoin(SpatiumUtils pl){
+	public PlayerJoin(AOTPUtils pl){
 		this.pl = pl;
 	}
 	

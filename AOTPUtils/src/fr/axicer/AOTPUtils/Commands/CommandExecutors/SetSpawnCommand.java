@@ -7,15 +7,15 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import fr.axicer.AOTPUtils.SpatiumUtils;
+import fr.axicer.AOTPUtils.AOTPUtils;
 import fr.axicer.AOTPUtils.Utils.ChatUtils;
 import fr.axicer.AOTPUtils.Utils.Vault;
 
 public class SetSpawnCommand implements CommandExecutor {
 	
-	SpatiumUtils pl;
+	AOTPUtils pl;
 	
-	public SetSpawnCommand(SpatiumUtils pl){
+	public SetSpawnCommand(AOTPUtils pl){
 		this.pl = pl;
 	}
 

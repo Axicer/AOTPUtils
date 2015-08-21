@@ -6,13 +6,13 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityExplodeEvent;
 
-import fr.axicer.AOTPUtils.SpatiumUtils;
+import fr.axicer.AOTPUtils.AOTPUtils;
 
 public class EntityExplode implements Listener {
 	
-	SpatiumUtils pl;
+	AOTPUtils pl;
 	
-	public EntityExplode(SpatiumUtils pl) {
+	public EntityExplode(AOTPUtils pl) {
 		this.pl = pl;
 	}
 	@EventHandler

@@ -6,14 +6,14 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 
-import fr.axicer.AOTPUtils.SpatiumUtils;
+import fr.axicer.AOTPUtils.AOTPUtils;
 import fr.axicer.AOTPUtils.Utils.ChatUtils;
 
 public class PlayerCommandPreProcess implements Listener {
 	
-	SpatiumUtils pl;
+	AOTPUtils pl;
 	
-	public PlayerCommandPreProcess(SpatiumUtils pl){
+	public PlayerCommandPreProcess(AOTPUtils pl){
 		this.pl = pl;
 	}
 	

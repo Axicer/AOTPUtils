@@ -6,10 +6,10 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
 
-import fr.axicer.AOTPUtils.SpatiumUtils;
+import fr.axicer.AOTPUtils.AOTPUtils;
 
 public class Documentation {
-	public static void createFile(SpatiumUtils pl) throws IOException{
+	public static void createFile(AOTPUtils pl) throws IOException{
 		File documentation = new File(pl.getDataFolder()+"/documentation.txt");
 		if(!documentation.exists()){
 			documentation.createNewFile();

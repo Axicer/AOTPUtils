@@ -9,15 +9,15 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 
-import fr.axicer.AOTPUtils.SpatiumUtils;
+import fr.axicer.AOTPUtils.AOTPUtils;
 import fr.axicer.AOTPUtils.Utils.ChatUtils;
 import fr.axicer.AOTPUtils.Utils.Vault;
 
 public class SpawnCommand implements CommandExecutor {
 	
-	public SpatiumUtils pl;
+	public AOTPUtils pl;
 	
-	public SpawnCommand(SpatiumUtils pl){
+	public SpawnCommand(AOTPUtils pl){
 		this.pl = pl;
 	}
 	@Override

@@ -7,13 +7,13 @@ import java.util.List;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import fr.axicer.AOTPUtils.SpatiumUtils;
+import fr.axicer.AOTPUtils.AOTPUtils;
 
 public class MaintenanceConfig {
 	public static File MaintenanceConfigFile;
 	public static YamlConfiguration MaintenanceConfig;
 	
-	public static void setupBannedConfig(SpatiumUtils pl) throws IOException{
+	public static void setupBannedConfig(AOTPUtils pl) throws IOException{
 		MaintenanceConfigFile = new File(pl.getDataFolder()+"/maintenance.yml");
 		if(!MaintenanceConfigFile.exists()){
 			MaintenanceConfigFile.createNewFile();

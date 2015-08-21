@@ -5,7 +5,7 @@ import java.io.IOException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import fr.axicer.AOTPUtils.SpatiumUtils;
+import fr.axicer.AOTPUtils.AOTPUtils;
 import fr.axicer.AOTPUtils.Configs.configs.BannedPlayerConfig;
 import fr.axicer.AOTPUtils.Configs.configs.BannedUUIDPlayerConfig;
 import fr.axicer.AOTPUtils.Configs.configs.KitConfig;
@@ -17,9 +17,9 @@ import fr.axicer.AOTPUtils.Utils.KitLoader;
 
 public class ConfigManager {
 	
-	public static SpatiumUtils pl;
+	public static AOTPUtils pl;
 	
-	public static void setupConfigFiles(SpatiumUtils pl) throws IOException{
+	public static void setupConfigFiles(AOTPUtils pl) throws IOException{
 		BannedPlayerConfig.setupBannedConfig(pl);
 		BannedUUIDPlayerConfig.setupBannedConfig(pl);
 		MaintenanceConfig.setupBannedConfig(pl);
@@ -29,7 +29,7 @@ public class ConfigManager {
 		ConfigManager.pl = pl;
 	}
 	
-	public static void reloadConfigFile(SpatiumUtils pl) throws IOException{
+	public static void reloadConfigFile(AOTPUtils pl) throws IOException{
 		BannedPlayerConfig.setupBannedConfig(pl);
 		BannedUUIDPlayerConfig.setupBannedConfig(pl);
 		MaintenanceConfig.setupBannedConfig(pl);

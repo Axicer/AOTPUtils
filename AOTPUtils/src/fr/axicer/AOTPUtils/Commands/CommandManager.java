@@ -1,6 +1,6 @@
 package fr.axicer.AOTPUtils.Commands;
 
-import fr.axicer.AOTPUtils.SpatiumUtils;
+import fr.axicer.AOTPUtils.AOTPUtils;
 import fr.axicer.AOTPUtils.Commands.CommandExecutors.BifleCommand;
 import fr.axicer.AOTPUtils.Commands.CommandExecutors.DayCommand;
 import fr.axicer.AOTPUtils.Commands.CommandExecutors.FakeJoinCommand;
@@ -44,7 +44,7 @@ import fr.axicer.AOTPUtils.Commands.CommandTabCompleters.MoneyTabCompleter;
 import fr.axicer.AOTPUtils.Commands.CommandTabCompleters.NickTabCompleter;
 
 public class CommandManager {
-	public static void registerCommands(SpatiumUtils pl){
+	public static void registerCommands(AOTPUtils pl){
 		//setting command executors
 		pl.getCommand("sban").setExecutor(new SbanCommand());
 		pl.getCommand("sunban").setExecutor(new SunbanCommand());

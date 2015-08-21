@@ -1,7 +1,7 @@
-name: SpatiumUtils
-version: 1.3.2
+name: Arcade_On_The_Pixels_Utils
+version: 1.4
 author: Axicer
-main: fr.axicer.SpatiumUtils.SpatiumUtils
+main: fr.axicer.AOTPUtils.AOTPUtils
 depend: [Vault]
 
 commands:

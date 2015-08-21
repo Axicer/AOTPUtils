@@ -6,13 +6,13 @@ import java.util.List;
 
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import fr.axicer.AOTPUtils.SpatiumUtils;
+import fr.axicer.AOTPUtils.AOTPUtils;
 
 public class BannedUUIDPlayerConfig {
 	public static File bannedUUIDPlayerConfigFile;
 	public static YamlConfiguration bannedUUIDPlayerConfig;
 	
-	public static void setupBannedConfig(SpatiumUtils pl) throws IOException{
+	public static void setupBannedConfig(AOTPUtils pl) throws IOException{
 		bannedUUIDPlayerConfigFile = new File(pl.getDataFolder()+"/bannedUUIDPlayer.yml");
 		if(!bannedUUIDPlayerConfigFile.exists()){
 			bannedUUIDPlayerConfigFile.createNewFile();

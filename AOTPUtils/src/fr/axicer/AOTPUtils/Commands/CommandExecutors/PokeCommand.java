@@ -11,16 +11,16 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import fr.axicer.AOTPUtils.SpatiumUtils;
+import fr.axicer.AOTPUtils.AOTPUtils;
 import fr.axicer.AOTPUtils.Utils.Vault;
 
 public class PokeCommand implements CommandExecutor {
 	
 	private ArrayList<Player> poked = new ArrayList<Player>();
 	
-	SpatiumUtils pl;
+	AOTPUtils pl;
 	
-	public PokeCommand(SpatiumUtils pl) {
+	public PokeCommand(AOTPUtils pl) {
 		this.pl = pl;
 	}
 

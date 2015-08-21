@@ -6,13 +6,13 @@ import java.util.List;
 
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import fr.axicer.AOTPUtils.SpatiumUtils;
+import fr.axicer.AOTPUtils.AOTPUtils;
 
 public class MutedPlayerConfig {
 	public static File mutedPlayerConfigFile;
 	public static YamlConfiguration mutedPlayerConfig;
 	
-	public static void setupBannedConfig(SpatiumUtils pl) throws IOException{
+	public static void setupBannedConfig(AOTPUtils pl) throws IOException{
 		mutedPlayerConfigFile = new File(pl.getDataFolder()+"/mutedPlayer.yml");
 		if(!mutedPlayerConfigFile.exists()){
 			mutedPlayerConfigFile.createNewFile();

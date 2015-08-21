@@ -5,13 +5,13 @@ import java.io.IOException;
 
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import fr.axicer.AOTPUtils.SpatiumUtils;
+import fr.axicer.AOTPUtils.AOTPUtils;
 
 public class MoneyConfig {
 	public static File moneyConfigFile;
 	public static YamlConfiguration moneyConfig;
 	
-	public static void setupBannedConfig(SpatiumUtils pl) throws IOException{
+	public static void setupBannedConfig(AOTPUtils pl) throws IOException{
 		moneyConfigFile = new File(pl.getDataFolder()+"/money.yml");
 		if(!moneyConfigFile.exists()){
 			moneyConfigFile.createNewFile();

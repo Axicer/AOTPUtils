@@ -7,12 +7,12 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerRespawnEvent;
 
-import fr.axicer.AOTPUtils.SpatiumUtils;
+import fr.axicer.AOTPUtils.AOTPUtils;
 
 public class PlayerRespawn implements Listener {
-	SpatiumUtils pl;
+	AOTPUtils pl;
 	
-	public PlayerRespawn(SpatiumUtils pl) {
+	public PlayerRespawn(AOTPUtils pl) {
 		this.pl = pl;
 	}
 	@EventHandler

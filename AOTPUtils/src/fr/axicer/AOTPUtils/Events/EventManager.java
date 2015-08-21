@@ -2,7 +2,7 @@ package fr.axicer.AOTPUtils.Events;
 
 import org.bukkit.plugin.PluginManager;
 
-import fr.axicer.AOTPUtils.SpatiumUtils;
+import fr.axicer.AOTPUtils.AOTPUtils;
 import fr.axicer.AOTPUtils.Events.EventsListener.EntityDamage;
 import fr.axicer.AOTPUtils.Events.EventsListener.EntityDamageByEntity;
 import fr.axicer.AOTPUtils.Events.EventsListener.EntityExplode;
@@ -20,7 +20,7 @@ import fr.axicer.AOTPUtils.Events.EventsListener.ServerListPing;
 
 public class EventManager {
 	
-	public static void registersEvents(SpatiumUtils pl){ // register all Listeners
+	public static void registersEvents(AOTPUtils pl){ // register all Listeners
 		PluginManager pm = pl.getServer().getPluginManager();
 		pm.registerEvents(new PlayerJoin(pl), pl);
 		pm.registerEvents(new PlayerQuit(), pl);
